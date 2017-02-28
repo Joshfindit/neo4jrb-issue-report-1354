@@ -1,3 +1,6 @@
+gem 'neo4j-core', '=7.0.3'
+gem 'neo4j', '=8.0.6'
+
 require 'json'
 require 'jsonapi-serializers'
 require 'neo4j'
@@ -13,7 +16,6 @@ require 'sinatra/base'
 
 
 NEO4J_URL = "bolt://neo4j:password@localhost:7687"
-
 
 class JunkNode
   include Neo4j::ActiveNode
